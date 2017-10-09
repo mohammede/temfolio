@@ -1,0 +1,766 @@
+//------- start variable ------//
+$primary-color: #16a085;
+$text-color: #666;
+
+//------- end variable ------//
+
+/*-------- start button --------*/
+.btn.btn-primary {
+  background: $primary-color;
+  border-color: $primary-color;
+}
+
+.btn.btn-secondary {
+  background: white;
+  color: $primary-color;
+}
+
+/*-------- start general --------*/
+* {
+  font-family: Lato;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #2d2d2d;
+}
+p {
+  font-size: 15px;
+  color: $text-color;
+}
+
+.pd {
+  padding-top: 60px;
+}
+
+.pb {
+  padding-bottom: 60px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pd-30 {
+  padding-top: 30px;
+}
+
+.mt {
+  margin-top: 60px;
+}
+
+.pattern-wd {
+  width: 220px;
+}
+.animated {
+  visibility: visible !important;
+}
+.title {
+  h1 {
+    font-weight: bold;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 48px;
+    color: $primary-color;
+  }
+}
+
+.brief {
+  font-size: 20px !important;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*-------- end general --------*/
+/*-------- start site header --------*/
+#site-header {
+  background-image: url("../img/img1.jpg");
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (     device-pixel-ratio: 2) {
+    background-image: url("../img/img1@2x.jpg");
+  }
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  .content {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    .slider-inner {
+      display: flex;
+      .owl-carousel {
+        margin: auto;
+        h2 {
+          color: white;
+          height: 70px;
+          font-size: 40px;
+          @media screen and (max-width: 576px) {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    h1 {
+      color: white;
+      position: relative;
+      font-size: 72px;
+    }
+    .pattern-white {
+      width: 300px;
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+    }
+    .btn.btn-primary,
+    .btn.btn-secondary {
+      font-size: 18px;
+      width: 230px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 25px;
+      @media screen and (max-width: 576px) {
+        font-size : 14px;
+        width: 180px;
+      }
+    }
+    .btn.btn-primary {
+      margin-left: 30px;
+    }
+  }
+}
+
+/*-------- end site header --------*/
+/*-------- start site navbar --------*/
+#site-nav {
+  background-color: white;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  .navbar-brand {
+    width: 120px;
+    object {
+      pointer-events: none;
+    }
+  }
+  .nav-item {
+    &.active {
+      .nav-link {
+        color: $primary-color;
+      }
+    }
+    .nav-link {
+      font-size: 18px;
+      color: $text-color;
+    }
+  }
+}
+
+/*-------- end site header --------*/
+/*-------- start site about --------*/
+#site-about {
+  visibility: hidden;
+  p {
+    word-break: break-all;
+    -moz-text-align-last: center;
+    text-align-last: center;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  i {
+    font-size: 72px;
+    color: $primary-color;
+  }
+}
+
+#site-services {
+  visibility: hidden;
+  .icon {
+    position: relative;
+    @media screen and (max-width: 768px) {
+      overflow: hidden;
+      height: 110px;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 110px;
+      background: #f3f3f3;
+      border-radius: 50%;
+      height: 110px;
+      transform: translate(-50%, -50%);
+    }
+    object {
+      width: 70px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    color: #2d2d2d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  p {
+    color: $text-color;
+    font-size: 15px;
+    @media screen and (max-width: 768px) {
+      text-align: center !important;
+    }
+  }
+}
+
+/*-------- end site about --------*/
+/*-------- start site skills --------*/
+#site-skills {
+  background-image: url("../img/img2.jpg");
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (     device-pixel-ratio: 2) {
+    background-image: url("../img/img2@2x.jpg");
+  }
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  .title {
+    visibility: hidden;
+    h1 {
+      color: white;
+      position: relative;
+      font-size: 48px;
+    }
+    object {
+      width: 220px;
+      position: relative;
+    }
+  }
+  p {
+    color: white;
+    text-align: justify;
+  }
+  h6 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  .tooltip-progress {
+    position: relative;
+    .tooltip {
+      opacity: 1;
+      top: -35px;
+      margin-left: -30px;
+      .tooltip-inner {
+        background-color: #262626;
+        &::before {
+          border-top-color: #262626;
+        }
+      }
+    }
+  }
+  .progress {
+    margin-bottom: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 25px;
+    .progress-bar {
+      background-color: $primary-color;
+      height: 20px;
+      border-radius: 25px;
+    }
+  }
+}
+
+/*-------- end site skills --------*/
+/*-------- start site team --------*/
+#site-team {
+  visibility: hidden;
+  img {
+    width: 100%;
+    height: 300px;
+    @media screen and (max-width: 768px) {
+      margin: auto;
+      width: 70%;
+    }
+  }
+  .img-overlay {
+    width: calc(100% - 30px);
+    height: 300px;
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: 15px;
+    transition: 0.5s;
+    opacity: 0;
+    @media screen and (max-width: 576px) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67%;
+    }
+    .overlay-content {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      opacity: 0;
+      transition: 0.5s;
+      a i{
+        color: white;
+        margin-right: 10px;
+      }
+    }
+    &:hover, &:hover .overlay-content {
+      opacity: 1;
+    }
+  }
+  div {
+    margin-top: 5px;
+    margin-bottom: 0;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  span {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p, span {
+    color: $text-color;
+  }
+}
+
+/*-------- end site team --------*/
+/*-------- start site portfolio --------*/
+#site-portfolio {
+  .title,.brief,.nav {
+    visibility: hidden;
+  }
+  .nav {
+    a {
+      color: $text-color;
+      font-weight: bold;
+      border: 1px solid $text-color;
+      margin-left: 15px;
+      transition: .2s;
+      @media screen and (max-width: 576px) {
+        font-size: 13px;
+      }
+      &:hover {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+      }
+      &.active {
+        color: white;
+        background-color: $primary-color;
+        border-color: transparent;
+      }
+    }
+  }
+  .img-item {
+    border: none;
+    height: 260px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    color: white;
+    &:hover {
+      .overlay {
+        opacity: 1;
+      }
+    }
+    img {
+      height: inherit;
+    }
+    .overlay {
+      background-color : rgba(0, 0, 0, 0.6);
+      text-align: center;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      display: -webkit-flex;
+      transition: all ease-in-out 300ms;
+      -webkit-transition: all ease-in-out 300ms;
+      .overlay-content {
+        margin: auto auto;
+        h4,p{
+          color: white;
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .big-lg {
+    @media screen and (min-width: 992px) {
+      height: 540px !important;
+    }
+  }
+}
+
+/*-------- end site portfolio --------*/
+/*-------- start site testimonials --------*/
+#site-testimonials {
+  background-image: url("../img/img3.jpg");
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (     device-pixel-ratio: 2) {
+    background-image: url("../img/img3@2x.jpg");
+  }
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  .title,.brief,.owl-carousel {
+    visibility: hidden;
+  }
+  .title {
+    h1 {
+      color: white;
+      position: relative;
+      font-size: 48px;
+    }
+    object {
+      width: 220px;
+      position: relative;
+    }
+  }
+  p {
+    color: white;
+    text-align: center;
+  }
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .job {
+    font-size: 16px;
+  }
+}
+
+/*-------- end site testimonials --------*/
+/*-------- start site logos --------*/
+#site-logos {
+  object.embed-responsive {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+  }
+}
+
+/*-------- end site logos --------*/
+/*-------- start site pricing --------*/
+#site-pricing {
+  visibility: hidden;
+  .basic,
+  .premium,
+  .ultimate {
+    padding: 50px;
+    border-radius: 2px;
+  }
+  .premium,
+  .ultimate {
+    h4 {
+      overflow: hidden;
+      min-height: 52px;
+      position: relative;
+      width: 175px;
+      margin-left: auto;
+      margin-right: auto;
+      sup {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        font-size: 24px;
+        height: 100%;
+      }
+      span {
+        position: absolute;
+        &:nth-child(2) {
+          top: 0;
+          left: 15px;
+        }
+        &:nth-child(3) {
+          top: 26px;
+          left: 80px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  h4, h6, p, span {
+    color: $text-color;
+  }
+  h6 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 52px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 15px;
+  }
+  .btn {
+    margin-top: 20px;
+    border-radius: 25px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 170px;
+    transition: .5s;
+  }
+  .basic {
+    background: #f2f2f2;
+    margin: 50px 0;
+    h4 {
+    }
+    .btn {
+      background: #4d4d4d;
+      color: #fff;
+      &:hover {
+        background: #f2f2f2;
+        color: #4d4d4d;
+        border: 1px solid #4d4d4d;
+      }
+    }
+  }
+  .premium {
+    border: 2px solid #16a085;
+    margin: 20px 0;
+    h4 {
+      sup, span {
+        color: $primary-color;
+      }
+    }
+    p {
+      margin-bottom: 28px;
+    }
+    .btn {
+      background: $primary-color;
+      color: #fff;
+      &:hover {
+        background: white;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+      }
+    }
+  }
+  .ultimate {
+    background: $primary-color;
+    margin: 50px 0;
+    h4, h6, p, span {
+      color: white;
+    }
+    .btn {
+      background: white;
+      color: $primary-color;
+      &:hover {
+        background: $primary-color;
+        color: white;
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
+/*-------- end site pricing --------*/
+/*-------- start site touch --------*/
+#site-touch {
+  background-image: url("../img/img4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  .title,.touch-animated {
+    visibility: hidden;
+  }
+  .title {
+    h1 {
+      color: white;
+      position: relative;
+      font-size: 48px;
+    }
+    object {
+      width: 220px;
+      position: relative;
+    }
+  }
+  h3 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  h3 + p {
+    @media screen and (max-width: 768px) {
+      text-align: center !important;
+    }
+  }
+  p {
+    color: white;
+    margin: 0;
+  }
+  i {
+    background: #f2f2f2;
+    padding: 15px;
+    width: 55px;
+    display: block;
+    text-align: center;
+    border-radius: 100%;
+    height: 55px;
+    font-size: 24px;
+    line-height: 26px;
+    color: $primary-color;
+  }
+  input[type='text'], textarea {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  input[type='text']::placeholder,
+  textarea::placeholder {
+    color: white;
+  }
+  .btn {
+    border-radius: 25px;
+    padding: 10px 50px;
+    cursor: pointer;
+  }
+}
+
+/*-------- end site touch --------*/
+/*-------- start site footer --------*/
+#site-footer {
+  background: black;
+  .footer-animated {
+    visibility: hidden;
+  }
+  object {
+    width: 200px;
+  }
+  .nav-item {
+    background: #f2f2f2;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+    cursor: pointer;
+    &:hover a {
+      color: #f2f2f2;
+    }
+    a {
+      transition: .5s;
+      color: #000;
+    }
+    &:nth-of-type(1):hover {
+      background: #3b5998;
+    }
+    &:nth-of-type(2):hover {
+      background: #1da1f2;
+    }
+    &:nth-of-type(3):hover {
+      background: #dd4b39;
+    }
+    &:nth-of-type(4):hover {
+      background: #6e5494;
+    }
+    &:nth-of-type(5):hover {
+      background: #1769ff;
+    }
+  }
+  p {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/*-------- end site footer --------*/
+/*-------- start project header --------*/
+#project-header {
+  .title {
+    h2 {
+      color: $primary-color;
+      position: relative;
+      font-size: 40px;
+    }
+    object {
+      width: 220px;
+      position: relative;
+    }
+  }
+  .d-block {
+    width: 100%;
+    height: 500px;
+  }
+  .project-detail {
+    span {
+      width: 100px;
+      display: inline-block;
+      font-weight: bold;
+      color: #292b2c;
+    }
+  }
+}
+/*-------- end project header --------*/
+/*-------- start  no css all --------*/
+.no-cssall {
+  #site-header {
+    display: block;
+    .content{
+      margin:0;
+      top: 50%;
+      transform : translateY(-50%);
+      .slider-inner {
+        display: block;
+        .owl-carousel {
+          top: 50%;
+          transform : translateY(-50%);
+          margin: 0;
+        }
+      }
+    }
+  }
+  #site-portfolio {
+    .overlay {
+      display: block;
+      .overlay-content {
+        margin:0;
+        position: relative;
+        top:50%;
+        transform : translateY(-50%);
+      }
+    }
+  }
+}
+/*-------- end  no css all --------*/

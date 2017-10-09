@@ -1,0 +1,597 @@
+/*-------- start button --------*/
+.btn.btn-primary {
+  background: #16a085;
+  border-color: #16a085; }
+
+.btn.btn-secondary {
+  background: white;
+  color: #16a085; }
+
+/*-------- start general --------*/
+* {
+  font-family: Lato; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d2d2d; }
+
+p {
+  font-size: 15px;
+  color: #666; }
+
+.pd {
+  padding-top: 60px; }
+
+.pb {
+  padding-bottom: 60px; }
+
+.pb-30 {
+  padding-bottom: 30px; }
+
+.pd-30 {
+  padding-top: 30px; }
+
+.mt {
+  margin-top: 60px; }
+
+.pattern-wd {
+  width: 220px; }
+
+.animated {
+  visibility: visible !important; }
+
+.title h1 {
+  font-weight: bold; }
+
+.title h2 {
+  font-weight: bold;
+  font-size: 48px;
+  color: #16a085; }
+
+.brief {
+  font-size: 20px !important;
+  margin-top: 20px;
+  font-weight: bold; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/*-------- end general --------*/
+/*-------- start site header --------*/
+#site-header {
+  background-image: url("../img/img1.jpg");
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  width: 100%; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (device-pixel-ratio: 2) {
+    #site-header {
+      background-image: url("../img/img1@2x.jpg"); } }
+  #site-header .content {
+    position: relative;
+    margin: auto;
+    width: 100%; }
+    #site-header .content .slider-inner {
+      display: flex; }
+      #site-header .content .slider-inner .owl-carousel {
+        margin: auto; }
+        #site-header .content .slider-inner .owl-carousel h2 {
+          color: white;
+          height: 70px;
+          font-size: 40px; }
+          @media screen and (max-width: 576px) {
+            #site-header .content .slider-inner .owl-carousel h2 {
+              font-size: 30px; } }
+    #site-header .content h1 {
+      color: white;
+      position: relative;
+      font-size: 72px; }
+    #site-header .content .pattern-white {
+      width: 300px;
+      display: block;
+      margin: auto;
+      margin-top: 10px; }
+    #site-header .content .btn.btn-primary,
+    #site-header .content .btn.btn-secondary {
+      font-size: 18px;
+      width: 230px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 25px; }
+      @media screen and (max-width: 576px) {
+        #site-header .content .btn.btn-primary,
+        #site-header .content .btn.btn-secondary {
+          font-size: 14px;
+          width: 180px; } }
+    #site-header .content .btn.btn-primary {
+      margin-left: 30px; }
+
+/*-------- end site header --------*/
+/*-------- start site navbar --------*/
+#site-nav {
+  background-color: white;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  z-index: 10000; }
+  #site-nav .navbar-brand {
+    width: 120px; }
+    #site-nav .navbar-brand object {
+      pointer-events: none; }
+  #site-nav .nav-item.active .nav-link {
+    color: #16a085; }
+  #site-nav .nav-item .nav-link {
+    font-size: 18px;
+    color: #666; }
+
+/*-------- end site header --------*/
+/*-------- start site about --------*/
+#site-about {
+  visibility: hidden; }
+  #site-about p {
+    word-break: break-all;
+    -moz-text-align-last: center;
+    text-align-last: center; }
+  #site-about h3 {
+    font-weight: bold;
+    font-size: 30px; }
+  #site-about i {
+    font-size: 72px;
+    color: #16a085; }
+
+#site-services {
+  visibility: hidden; }
+  #site-services .icon {
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      #site-services .icon {
+        overflow: hidden;
+        height: 110px; } }
+    #site-services .icon .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 110px;
+      background: #f3f3f3;
+      border-radius: 50%;
+      height: 110px;
+      transform: translate(-50%, -50%); }
+    #site-services .icon object {
+      width: 70px;
+      margin-left: 20px;
+      margin-top: 20px; }
+  #site-services h3 {
+    font-size: 24px;
+    color: #2d2d2d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px; }
+  #site-services p {
+    color: #666;
+    font-size: 15px; }
+    @media screen and (max-width: 768px) {
+      #site-services p {
+        text-align: center !important; } }
+
+/*-------- end site about --------*/
+/*-------- start site skills --------*/
+#site-skills {
+  background-image: url("../img/img2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (device-pixel-ratio: 2) {
+    #site-skills {
+      background-image: url("../img/img2@2x.jpg"); } }
+  #site-skills .title {
+    visibility: hidden; }
+    #site-skills .title h1 {
+      color: white;
+      position: relative;
+      font-size: 48px; }
+    #site-skills .title object {
+      width: 220px;
+      position: relative; }
+  #site-skills p {
+    color: white;
+    text-align: justify; }
+  #site-skills h6 {
+    color: white;
+    margin-bottom: 10px; }
+  #site-skills .tooltip-progress {
+    position: relative; }
+    #site-skills .tooltip-progress .tooltip {
+      opacity: 1;
+      top: -35px;
+      margin-left: -30px; }
+      #site-skills .tooltip-progress .tooltip .tooltip-inner {
+        background-color: #262626; }
+        #site-skills .tooltip-progress .tooltip .tooltip-inner::before {
+          border-top-color: #262626; }
+  #site-skills .progress {
+    margin-bottom: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 25px; }
+    #site-skills .progress .progress-bar {
+      background-color: #16a085;
+      height: 20px;
+      border-radius: 25px; }
+
+/*-------- end site skills --------*/
+/*-------- start site team --------*/
+#site-team {
+  visibility: hidden; }
+  #site-team img {
+    width: 100%;
+    height: 300px; }
+    @media screen and (max-width: 768px) {
+      #site-team img {
+        margin: auto;
+        width: 70%; } }
+  #site-team .img-overlay {
+    width: calc(100% - 30px);
+    height: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: 15px;
+    transition: 0.5s;
+    opacity: 0; }
+    @media screen and (max-width: 576px) {
+      #site-team .img-overlay {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 67%; } }
+    #site-team .img-overlay .overlay-content {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      opacity: 0;
+      transition: 0.5s; }
+      #site-team .img-overlay .overlay-content a i {
+        color: white;
+        margin-right: 10px; }
+    #site-team .img-overlay:hover, #site-team .img-overlay:hover .overlay-content {
+      opacity: 1; }
+  #site-team div {
+    margin-top: 5px;
+    margin-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      #site-team div {
+        text-align: center;
+        margin-bottom: 20px; } }
+  #site-team span {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold; }
+  #site-team p, #site-team span {
+    color: #666; }
+
+/*-------- end site team --------*/
+/*-------- start site portfolio --------*/
+#site-portfolio .title, #site-portfolio .brief, #site-portfolio .nav {
+  visibility: hidden; }
+
+#site-portfolio .nav a {
+  color: #666;
+  font-weight: bold;
+  border: 1px solid #666;
+  margin-left: 15px;
+  transition: .2s; }
+  @media screen and (max-width: 576px) {
+    #site-portfolio .nav a {
+      font-size: 13px; } }
+  #site-portfolio .nav a:hover {
+    border: 1px solid #16a085;
+    color: #16a085; }
+  #site-portfolio .nav a.active {
+    color: white;
+    background-color: #16a085;
+    border-color: transparent; }
+
+#site-portfolio .img-item {
+  border: none;
+  height: 260px;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+  color: white; }
+  #site-portfolio .img-item:hover .overlay {
+    opacity: 1; }
+  #site-portfolio .img-item img {
+    height: inherit; }
+  #site-portfolio .img-item .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    display: -webkit-flex;
+    transition: all ease-in-out 300ms;
+    -webkit-transition: all ease-in-out 300ms; }
+    #site-portfolio .img-item .overlay .overlay-content {
+      margin: auto auto; }
+      #site-portfolio .img-item .overlay .overlay-content h4, #site-portfolio .img-item .overlay .overlay-content p {
+        color: white; }
+      #site-portfolio .img-item .overlay .overlay-content h4 {
+        font-size: 18px;
+        font-weight: bold; }
+      #site-portfolio .img-item .overlay .overlay-content p {
+        font-size: 14px; }
+
+@media screen and (min-width: 992px) {
+  #site-portfolio .big-lg {
+    height: 540px !important; } }
+
+/*-------- end site portfolio --------*/
+/*-------- start site testimonials --------*/
+#site-testimonials {
+  background-image: url("../img/img3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (device-pixel-ratio: 2) {
+    #site-testimonials {
+      background-image: url("../img/img3@2x.jpg"); } }
+  #site-testimonials .title, #site-testimonials .brief, #site-testimonials .owl-carousel {
+    visibility: hidden; }
+  #site-testimonials .title h1 {
+    color: white;
+    position: relative;
+    font-size: 48px; }
+  #site-testimonials .title object {
+    width: 220px;
+    position: relative; }
+  #site-testimonials p {
+    color: white;
+    text-align: center; }
+  #site-testimonials .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px; }
+  #site-testimonials .job {
+    font-size: 16px; }
+
+/*-------- end site testimonials --------*/
+/*-------- start site logos --------*/
+#site-logos object.embed-responsive {
+  width: 100px;
+  height: 50px;
+  margin: auto; }
+
+/*-------- end site logos --------*/
+/*-------- start site pricing --------*/
+#site-pricing {
+  visibility: hidden; }
+  #site-pricing .basic,
+  #site-pricing .premium,
+  #site-pricing .ultimate {
+    padding: 50px;
+    border-radius: 2px; }
+  #site-pricing .premium h4,
+  #site-pricing .ultimate h4 {
+    overflow: hidden;
+    min-height: 52px;
+    position: relative;
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto; }
+    #site-pricing .premium h4 sup,
+    #site-pricing .ultimate h4 sup {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      font-size: 24px;
+      height: 100%; }
+    #site-pricing .premium h4 span,
+    #site-pricing .ultimate h4 span {
+      position: absolute; }
+      #site-pricing .premium h4 span:nth-child(2),
+      #site-pricing .ultimate h4 span:nth-child(2) {
+        top: 0;
+        left: 15px; }
+      #site-pricing .premium h4 span:nth-child(3),
+      #site-pricing .ultimate h4 span:nth-child(3) {
+        top: 26px;
+        left: 80px;
+        font-size: 24px; }
+  #site-pricing h4, #site-pricing h6, #site-pricing p, #site-pricing span {
+    color: #666; }
+  #site-pricing h6 {
+    font-size: 24px;
+    font-weight: bold; }
+  #site-pricing h4 {
+    font-size: 52px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: bold; }
+  #site-pricing p {
+    font-size: 15px; }
+  #site-pricing .btn {
+    margin-top: 20px;
+    border-radius: 25px;
+    height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 170px;
+    transition: .5s; }
+  #site-pricing .basic {
+    background: #f2f2f2;
+    margin: 50px 0; }
+    #site-pricing .basic .btn {
+      background: #4d4d4d;
+      color: #fff; }
+      #site-pricing .basic .btn:hover {
+        background: #f2f2f2;
+        color: #4d4d4d;
+        border: 1px solid #4d4d4d; }
+  #site-pricing .premium {
+    border: 2px solid #16a085;
+    margin: 20px 0; }
+    #site-pricing .premium h4 sup, #site-pricing .premium h4 span {
+      color: #16a085; }
+    #site-pricing .premium p {
+      margin-bottom: 28px; }
+    #site-pricing .premium .btn {
+      background: #16a085;
+      color: #fff; }
+      #site-pricing .premium .btn:hover {
+        background: white;
+        color: #16a085;
+        border: 1px solid #16a085; }
+  #site-pricing .ultimate {
+    background: #16a085;
+    margin: 50px 0; }
+    #site-pricing .ultimate h4, #site-pricing .ultimate h6, #site-pricing .ultimate p, #site-pricing .ultimate span {
+      color: white; }
+    #site-pricing .ultimate .btn {
+      background: white;
+      color: #16a085; }
+      #site-pricing .ultimate .btn:hover {
+        background: #16a085;
+        color: white;
+        border: 1px solid white; }
+
+/*-------- end site pricing --------*/
+/*-------- start site touch --------*/
+#site-touch {
+  background-image: url("../img/img4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  #site-touch .title, #site-touch .touch-animated {
+    visibility: hidden; }
+  #site-touch .title h1 {
+    color: white;
+    position: relative;
+    font-size: 48px; }
+  #site-touch .title object {
+    width: 220px;
+    position: relative; }
+  #site-touch h3 {
+    color: white;
+    margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    #site-touch h3 + p {
+      text-align: center !important; } }
+  #site-touch p {
+    color: white;
+    margin: 0; }
+  #site-touch i {
+    background: #f2f2f2;
+    padding: 15px;
+    width: 55px;
+    display: block;
+    text-align: center;
+    border-radius: 100%;
+    height: 55px;
+    font-size: 24px;
+    line-height: 26px;
+    color: #16a085; }
+  #site-touch input[type='text'], #site-touch textarea {
+    background: transparent;
+    border: 2px solid white;
+    color: white; }
+  #site-touch input[type='text']::placeholder,
+  #site-touch textarea::placeholder {
+    color: white; }
+  #site-touch .btn {
+    border-radius: 25px;
+    padding: 10px 50px;
+    cursor: pointer; }
+
+/*-------- end site touch --------*/
+/*-------- start site footer --------*/
+#site-footer {
+  background: black; }
+  #site-footer .footer-animated {
+    visibility: hidden; }
+  #site-footer object {
+    width: 200px; }
+  #site-footer .nav-item {
+    background: #f2f2f2;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+    cursor: pointer; }
+    #site-footer .nav-item:hover a {
+      color: #f2f2f2; }
+    #site-footer .nav-item a {
+      transition: .5s;
+      color: #000; }
+    #site-footer .nav-item:nth-of-type(1):hover {
+      background: #3b5998; }
+    #site-footer .nav-item:nth-of-type(2):hover {
+      background: #1da1f2; }
+    #site-footer .nav-item:nth-of-type(3):hover {
+      background: #dd4b39; }
+    #site-footer .nav-item:nth-of-type(4):hover {
+      background: #6e5494; }
+    #site-footer .nav-item:nth-of-type(5):hover {
+      background: #1769ff; }
+  #site-footer p {
+    color: white;
+    font-size: 18px; }
+
+/*-------- end site footer --------*/
+/*-------- start project header --------*/
+#project-header .title h2 {
+  color: #16a085;
+  position: relative;
+  font-size: 40px; }
+
+#project-header .title object {
+  width: 220px;
+  position: relative; }
+
+#project-header .d-block {
+  width: 100%;
+  height: 500px; }
+
+#project-header .project-detail span {
+  width: 100px;
+  display: inline-block;
+  font-weight: bold;
+  color: #292b2c; }
+
+/*-------- end project header --------*/
+/*-------- start  no css all --------*/
+.no-cssall #site-header {
+  display: block; }
+  .no-cssall #site-header .content {
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+    .no-cssall #site-header .content .slider-inner {
+      display: block; }
+      .no-cssall #site-header .content .slider-inner .owl-carousel {
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0; }
+
+.no-cssall #site-portfolio .overlay {
+  display: block; }
+  .no-cssall #site-portfolio .overlay .overlay-content {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+/*-------- end  no css all --------*/
+
+/*# sourceMappingURL=theme.css.map */

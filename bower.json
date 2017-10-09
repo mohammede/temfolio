@@ -1,0 +1,20 @@
+{
+  "name": "theme",
+  "description": "One Page Parallax Theme",
+  "authors": [
+    "Mohammed ECHARIQ"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome": "fontawesome#^4.7.0",
+    "Ionicons": "ionicons#^2.0.1",
+    "Modernizr": "https://modernizr.com/download?cssall-ie8compat-printshiv-setclasses-shi",
+    "owl.carousel": "^2.2.1",
+    "animate.css": "^3.5.2",
+    "waypoints": "^4.0.1"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.2.1"
+  }
+}
